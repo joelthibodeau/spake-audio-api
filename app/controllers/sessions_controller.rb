@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
-class SessionsController < ApplicationController
+class SessionsController < ProtectedController
   before_action :set_session, only: %i[show update destroy]
 
   # GET /sessions
   def index
-    @sessions = Session.all
+    # original ApplicationColntroller code
+    # @sessions = Session.all
+    @sessions = current_user.sessions.all
 
     render json: @sessions
   end
@@ -17,7 +19,10 @@ class SessionsController < ApplicationController
 
   # POST /sessions
   def create
+    # original ApplicationColntroller code
     @session = Session.new(session_params)
+    # @project = current_user.projects.find(params[:id])
+    # @session = current_user.sessions.build(session_params)
 
     if @session.save
       render json: @session, status: :created, location: @session
@@ -44,11 +49,13 @@ class SessionsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_session
-    @session = Session.find(params[:id])
+    # original ApplicationColntroller code
+    # @session = Session.find(params[:id])
+    @session = current_user.sessions.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
   def session_params
-    params.require(:session).permit(:date, :hours_worked, :hours_recorded, :notes)
+    params.require(:session).permit(:date, :hours_worked, :hours_recorded, :notes, :project_id)
   end
 end
