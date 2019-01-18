@@ -48,6 +48,6 @@ single page application.
 ### Planning & Future Iterations ###
 
 The current version of SPAKE Audio is a work in progress. Future iterations
-will fullfil the functionality expected in the user stories and have a finished
+will fulfill the functionality expected in the user stories and have a finished
 front-end design. I plan to use learn handlebars to display projects and
 sessions in a way that is usefule and meaningful to the user.
