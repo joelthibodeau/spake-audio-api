@@ -35,36 +35,36 @@ Install dependencies for the back-end repo by running:
 
 ##### User
 
-|        |
-|--------|--------------------
-| POST   | `/sign-in`
-| POST   | `sign-up`
-| PATCH  | `/change-password`
-| DELETE | `/sign-out`
+|        |        |
+|--------|---------
+| POST   | `/sign-in`|
+| POST   | `sign-up`|
+| PATCH  | `/change-password`|
+| DELETE | `/sign-out`|
 
 
 
 
 ##### Projects
 
-|        |
-|--------|--------------------
-| GET    | `/projects`
-| POST   | `/projects`
-| PATCH  | `/projects/${id}`
-| DELETE | `/projects/${id}`
+|        |        |
+|--------|---------
+| GET    | `/projects`|
+| POST   | `/projects`|
+| PATCH  | `/projects/${id}`|
+| DELETE | `/projects/${id}`|
 
 
 
 
 ##### Sessions
 
-|        |
-|--------|--------------------
-| GET    | `/sessions`
-| POST   | `/sessions`
-| PATCH  | `/sessions/${id}`
-| DELETE | `/sessions/${id}`
+|        |        |
+|--------|---------
+| GET    | `/sessions`|
+| POST   | `/sessions`|
+| PATCH  | `/sessions/${id}`|
+| DELETE | `/sessions/${id}`|
 
 
 
