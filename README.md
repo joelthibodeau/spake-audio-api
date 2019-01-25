@@ -33,8 +33,6 @@ Install dependencies for the back-end repo by running:
 
 ### Routes ###
 
-### Routes ###
-
 #### User ####
 
 /sign-in : POST
