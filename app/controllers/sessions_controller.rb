@@ -12,6 +12,20 @@ class SessionsController < ProtectedController
     render json: @sessions
   end
 
+  # started working on this with Alex and Elizabeth
+  # def index
+  #   # original ApplicationColntroller code
+  #   # @sessions = Session.all
+  #   if params[:project_id]
+  #     # send only sessions w certain project id
+  #     @sessions = current_user.sessions.where('project_id = ?', params[:project_id])
+  #   else
+  #     @sessions = current_user.sessions.all
+  #   end
+  #
+  #   render json: @sessions
+  # end
+
   # GET /sessions/1
   def show
     render json: @session
