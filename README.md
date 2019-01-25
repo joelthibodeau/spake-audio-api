@@ -97,6 +97,6 @@ Install dependencies for the back-end repo by running:
 
 The current version of SPAKE Audio is a work in progress. Future iterations
 will fulfill the functionality expected in the user stories and have a finished
-front-end design. I'm in the process of rebuilding the front-end using handlebars
-to display to create a better user experience. I will add an mp3 rousource to
+front-end design. I'm in the process of rebuilding the front-end using
+handlebars to create a better user experience. I will add an mp3 rousource to
 the back-end and use AWS to store the files.
