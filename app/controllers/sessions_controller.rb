@@ -17,6 +17,8 @@ class SessionsController < ProtectedController
   def index
     # original ApplicationColntroller code
     # @sessions = Session.all
+    puts params
+    puts "hello"
     if params[:project_id]
       # send only sessions w certain project id
       # trying to get sessions that belong to a project
